@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+  font-family: 'Manrope', sans-serif;
+ 
+}
+
+
+/* PRE-LOADER CSS */
+
+.loader-bg{
+  min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.loader-bg .loader-text
+{
+  font-size: 1.5rem;
+}
+
+.canvas {
+  align-items: center;
+  /* background: #eeeeee; */
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  display: flex;
+  height: 10em;
+  justify-content: center;
+  margin: 1em 1em 2em 1em;
+  width: 10em;
+}
+
+/* Spinner 6 starts here */
+.spinner6 {
+  background: #4DB6AC;
+  border-radius: 50%;
+  height: 1em;
+  margin: .1em;
+  width: 1em;
+}
+
+.p1 {
+  animation: fall 1s linear .3s infinite;
+}
+
+.p2 {
+  animation: fall 1s linear .2s infinite;
+}
+
+.p3 {
+  animation: fall 1s linear .1s infinite;
+}
+
+.p4 {
+  animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-15px);
+  }
+  25%, 75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+/* Spinner 6 ends here */
+
+@media (max-width: 600px) {
+  .canvas {
+    margin: 1em;
+  }
+}
+
+.day-bg{
+  background-image: url("../public/full_bg.jpg") !important;
+}
+.night-bg{
+  background-image: url("../public/night_sky_bg.jpg") !important;
+}
+.wrap1{
+  min-height: 100vh;
+  padding-top: 5%;
+ 
+  
+}
+.row1{
+  height: 80vh;
+  border: none;
+  padding: 5%;
+  /* background-image: url("https://vanilla-weather-app-one.vercel.app/images/background-day.png"); */
+  /* background-color: rgb(80 117 192 / 46%); */
+  background-color: rgb(60 76 110 / 20%);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: white;
+}
+
+.loc-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.loc-details h1{
+  font-weight: 600;
+  font-size: 3rem;
+}
+.loc-details span{
+  font-size: 1.2rem;
+}
+.weather-details{
+  display: flex;
+  padding-top: 6rem;
+}
+.weather-details .column-data {
+  display: flex;
+  flex-direction: column;
+  padding-top: .5rem;
+  padding-left: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.weather-details h1{
+  font-size: 4.5rem;
+}
+.weather-details .weather-icon{
+  padding-left: 5rem;
+}
+
+/* NEXT PART CSS */
+
+.search-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-box{
+  height: 44px;
+  background-color: rgba(211, 222, 238, 0.25);
+  border: none;
+  border-radius: 10px;
+  min-width: 400px;
+  padding-left: 1rem;
+}
+
+.search-box::placeholder{
+  color: black;
+}
+.search-btn{
+  height: 44px;
+  border-radius: 10px;
+  width: 100px;
+  outline: none;
+  border: none;
+  background-color: rgba(253, 253, 253, 0.642);
+}
+
+.search-details{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10rem;
+}
+.search-details h2{
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+.search-details span{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
