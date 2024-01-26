@@ -16,7 +16,7 @@ const datebuider = (d) => {
 
 const defaults = {
   // icon: 'CLEAR_DAY',
-  color: 'goldenrod',
+  color: 'white',
   size: 80,
   animate: true
 };
@@ -101,7 +101,7 @@ const CurrentLocation = () => {
       setSearchedWeatherData(data);
 
       if (coord) {
-        fetchData(coord.lat, coord.lon);
+        // fetchData(coord.lat, coord.lon);
       }
     } catch (error) {
       console.error('Error fetching weather data:', error.message);

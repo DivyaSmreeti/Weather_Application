@@ -99,9 +99,10 @@
   /* background-image: url("https://vanilla-weather-app-one.vercel.app/images/background-day.png"); */
   /* background-color: rgb(80 117 192 / 46%); */
   background-color: rgb(60 76 110 / 20%);
+  background-color: rgba(164, 185, 216, 0.25);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  color: white;
+  color: #ffffff;
 }
 
 .loc-details{
