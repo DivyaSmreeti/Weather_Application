@@ -2,11 +2,10 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import CurrentLocation from './currentLocation'
+import CurrentLocation from "./Components/CurrentLocation"
 
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
